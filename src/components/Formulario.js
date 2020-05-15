@@ -39,7 +39,7 @@ const[error, guardarError]  = useState(false);
     className="col-md-12"
     onSubmit={buscarReceta}
     >
-    <fieldset className="text-center mt-4">
+    <fieldset className="text-center mt-4 font-weight-bold">
     <legend >Busca bebidas por Categoría o Ingrediente</legend>
     </fieldset>
 

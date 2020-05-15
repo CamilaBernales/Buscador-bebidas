@@ -1,0 +1,80 @@
+.container {
+    background: #000000;
+    min-height: 40vh;
+    margin-bottom: 10%;
+   }
+  .fuente{
+    display: flex;
+    justify-content: center;
+    font-size: 6vh;
+    letter-spacing: 2rem;
+    color: #fff;
+   }
+   @media only screen and (max-height: 1000px) and (max-width: 600px)  {
+    /* MAX= MENOR O IGUAL */
+    .fuente{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vh;
+    margin: 0;
+    }
+    .container{
+    min-height: 30vh;
+     }
+   
+   }
+  .beer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    }
+  
+  .beer:before, .beer:after{
+    content: "🍺";
+    font-size: 100px;
+    }
+  .beer:before {
+    animation: cheers-after 3s ease infinite;
+    }
+  .beer:after {
+    animation: cheers-before 3s ease infinite;
+    }
+    
+  @keyframes cheers-before {
+    0% {
+      transform: rotateZ(0) translateX(20px);
+    }
+    30% {
+      transform: rotateZ(0) translateX(0);
+    }
+    50% {
+      transform: rotateZ(-15deg) translateX(-10px);
+    }
+    70% {
+      transform: rotateZ(0) translateX(0);
+    }
+    100% {
+      transform: rotateZ(0) translateX(20px);
+    }
+    }
+    
+  @keyframes cheers-after {
+    0% {
+      transform: rotateZ(0) rotateY(180deg) translateX(20px);
+    }
+    30% {
+      transform: rotateZ(0) rotateY(180deg) translateX(0);
+    }
+    50% {
+      transform: rotateZ(15deg) rotateY(180deg) translateX(-10px);
+    }
+    70% {
+      transform: rotateZ(0) rotateY(180deg) translateX(0);
+    }
+    100% {
+      transform: rotateZ(0) rotateY(180deg) translateX(20px);
+    }
+    }
+    

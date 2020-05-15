@@ -8,14 +8,12 @@ body {
   background-color: rgb(250,250,250);
   min-height: 100%;
 }
-header {
-  background-color: #f78259;
-  color: white;
-  padding: 5rem 0;
-}
 h1 {
   color: white;
   font-weight: 900;
   text-align: center;
   font-size: 3rem;
+}
+.btn{
+  background:  #000000;
 }
