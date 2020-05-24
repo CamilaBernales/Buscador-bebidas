@@ -1,5 +1,7 @@
 Beverage Finder
 
+DEMO : https://beveragefinder.netlify.app
+
 Through a REST API it allows you to search to obtain results of beverages by ingredient and type.
 
 
@@ -14,7 +16,8 @@ npm start
 Ready!
 
 Done with 🛠️
-Project done with REACT and MATERIAL-UI
+
+Project done with REACT and BOOTSTRAP
 
 
 
