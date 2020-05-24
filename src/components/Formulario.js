@@ -39,8 +39,8 @@ const[error, guardarError]  = useState(false);
     className="col-md-12"
     onSubmit={buscarReceta}
     >
-    <fieldset className="text-center mt-4 font-weight-bold">
-    <legend >Busca bebidas por Categoría o Ingrediente</legend>
+    <fieldset className="text-center mt-4 font-weight-bold text-trasform-uppercase">
+    <legend >Search drinks by Category or Ingredient</legend>
     </fieldset>
 
     <div className="row mt-5">
@@ -50,7 +50,7 @@ const[error, guardarError]  = useState(false);
                 name="ingrediente"
                 onChange={obtenerDatosReceta}
             >
-                <option value="">-- Selecciona Ingrediente --</option>
+                <option value="">-- Choose an Ingredient --</option>
                 {ingredientes.map(ingredientes => (
                     <option 
                         key={ingredientes.strIngredient1} 
@@ -65,7 +65,7 @@ const[error, guardarError]  = useState(false);
                 name="categoria"
                 onChange={obtenerDatosReceta}
             >
-                <option value="">-- Selecciona Categoría --</option>
+                <option value="">-- Choose an Category --</option>
                 {categorias.map(categoria => (
                     <option 
                         key={categoria.strCategory} 
@@ -79,11 +79,11 @@ const[error, guardarError]  = useState(false);
             <input
                 type="submit"
                 className="btn btn-block btn-primary"
-                value="Buscar Bebidas"
+                value="Search!"
             />
         </div>
     </div>
-    {error ? <Error mensaje="Debe elegir una categoria y un ingrediente." /> :null  }
+    {error ? <Error mensaje="Ingredient and Category is required." /> :null  }
 </form>
 )
 }

@@ -17,3 +17,7 @@ h1 {
 .btn{
   background:  #000000;
 }
+.btn:hover{
+  background: #ffffff;
+  color: #000000;
+}
